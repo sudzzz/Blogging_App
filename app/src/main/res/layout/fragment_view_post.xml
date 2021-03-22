@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    tools:context=".fragment.ViewPostFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginTop="15dp"
+        android:layout_margin="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/imgEmptyBlogPost"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/empty_blog"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have no posts"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/imgEmptyBlogPost"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>
